@@ -1,0 +1,71 @@
+brand-icons {
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.input {
+    border: 1px solid #F4F4F4;
+    max-width: 400px;
+    margin-right: 8px;
+}
+
+.keyIcon {
+    border-left: 2px solid #d6d6d6;
+    padding-left: 16px;
+}
+
+.showAll {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.count {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: -7px;
+    justify-content: center;
+    color: #fff;
+
+    padding: 0 4px;
+    font-size: 10px;
+    border-radius: 90px;
+    background-color: red;
+}
+
+.verticleLine {
+    border-left: 1px solid #05422C;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.filterborder {
+    border-right: 1px solid #F4F4F4;
+}
+
+.hr {
+    border: 1px solid #F4F4F4;
+}
+
+.nubersInStore{
+    border-left: 2px solid #F4F4F4;
+    padding-left: 10px;
+}
+
+.btn {
+    border: 1px solid #F4F4F4;
+    border-radius: 30px;
+}
+
+.borderBottom {
+    border-top: 2px solid #F4F4F4;
+
+}
+
+.Tyrelayout {
+    max-width: 1440px;
+
+}
+
+.topSeller {
+    background-color: #fff;
+}

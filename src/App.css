@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-size: 14px;
+    font-family: 'Lexend';
+    color: #5E5F60;
+}
+
+.app {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
