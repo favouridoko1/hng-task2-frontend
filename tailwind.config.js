@@ -15,7 +15,8 @@ export default {
       'font-family': 'Lexend',
       'red': '#DC2626',
       "fontColor": "#9D9EA2",
-      "topSelling": "#060709"
+      "topSelling": "#060709",
+      "$color":"#C8C9CB"
     },
   },
   plugins: [],

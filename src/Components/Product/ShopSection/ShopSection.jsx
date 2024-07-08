@@ -1,4 +1,5 @@
 import { getImageUrl } from "../../../utils/utils";
+import ShopSectionBottom from "./ShopSectionBottom";
 const ShopSection = () => {
   return (
     <div className="flex flex-col">
@@ -19,85 +20,134 @@ const ShopSection = () => {
           reduced enviroment impact.
         </p>
       </div>
-      <div className="text-2xl bg-grey mx-28 rounded">
+      <div className="text-2xl bg-grey py-3 mx-28 rounded">
         <h2 className="p-2 font-medium px-8 text-topSelling">Top Selling</h2>
         <div className="flex justify-around">
           <div className="flex flex-col justify-center">
             <div className="flex justify-center">
-            <img src={getImageUrl(`headerImages/tyre_dark_right.png`)} alt="" />
+              <img
+                src={getImageUrl(`headerImages/tyre_dark_right.png`)}
+                alt=""
+              />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
               <p className="text-fontColor text-xl">Michelin</p>
               <div className="flex flex-col justify-center items-center">
-              <h2 className="text-base">Michelin Primacy MXM4</h2>
-              <h4 className="font-bold text-headerTop text-sm">2020 BMW 3 Series</h4>
-              <div className="flex">
-                <p className="hr px-1 mx-1 text-black">Tyre size</p>
-                <p className="hr px-1 rounded-sm mx-1 text-black">225/55r17</p>
+                <h2 className="text-base">Michelin Primacy MXM4</h2>
+                <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
+                  2020 BMW 3 Series
+                </h4>
+                <div className="flex">
+                  <p className="hr px-1 mx-1 text-black">Tyre size</p>
+                  <p className="hr px-1 rounded-sm mx-1 text-black">
+                    225/55r17
+                  </p>
+                </div>
+                <div className="flex">
+                  <figure className="flex justify-center items-center">
+                    <img
+                      src={getImageUrl(`headerImages/star.png`)}
+                      alt=""
+                      className="pl-2 pr-1"
+                    />
+                    <figcaption className="pr-2 text-black">4.6/5</figcaption>
+                  </figure>
+                  <p className="review_ratings pl-2">
+                    135 <span>Review</span>
+                  </p>
+                </div>
+                <div className="flex text-base">
+                  <p className="m-1 text-red">$80.00</p>
+                </div>
+                <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+                  Add to cart
+                </button>
               </div>
-              <div className="flex text-base">
-                <p className="mx-1 line-through">$100.00</p>
-                <p className="mx-1 text-red">80.00</p>
-              </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">Add to cart</button>
-            </div>
             </div>
           </div>
           <div className="flex flex-col justify-center">
             <div className="flex justify-center">
-            <img src={getImageUrl(`headerImages/three-tyre.png`)} alt="" />
+              <img src={getImageUrl(`headerImages/three-tyre.png`)} alt="" />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
               <p className="text-fontColor text-xl">Falken</p>
               <div className="flex flex-col justify-center items-center">
-              <h2 className="text-base">Falken Ziex ZE950 A/S</h2>
-              <h4 className="font-bold text-headerTop text-sm">2013 Nisson Altima</h4>
-              <div className="flex">
-                <p className="hr px-1 mx-1 text-black">Tyre size</p>
-                <p className="hr px-1 rounded-sm mx-1 text-black">215/55R17</p>
+                <h2 className="text-base">Falken Ziex ZE950 A/S</h2>
+                <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
+                  2013 Nisson Altima
+                </h4>
+                <div className="flex">
+                  <p className="hr px-1 mx-1 text-black">Tyre size</p>
+                  <p className="hr px-1 rounded-sm mx-1 text-black">
+                    215/55R17
+                  </p>
+                </div>
+                <div className="flex">
+                  <figure className="flex justify-center items-center">
+                    <img
+                      src={getImageUrl(`headerImages/star.png`)}
+                      alt=""
+                      className="pl-2 pr-1"
+                    />
+                    <figcaption className="pr-2 text-black">4.6/5</figcaption>
+                  </figure>
+                  <p className="review_ratings text-sm pl-2">
+                    135 <span className="text-$color">Review</span>
+                  </p>
+                </div>
+                <div className="flex text-base">
+                  <p className="mx-1 text-red">$40.00</p>
+                </div>
+                <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+                  Add to cart
+                </button>
               </div>
-              <div className="flex">
-                <figure className="flex justify-center items-center">
-                  <img src={getImageUrl(`headerImages/star.png`)} alt="" />
-                  <figcaption className="px-1 text-black">4.6/5</figcaption>
-                </figure>
-                <p className="keyIcon">135 <span>Review</span></p>
-
-              </div>
-              <div className="flex text-base">
-                <p className="mx-1 line-through">$100.00</p>
-                <p className="mx-1 text-red">80.00</p>
-              </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">Add to cart</button>
-            </div>
             </div>
           </div>
           <div className="flex flex-col justify-center">
             <div className="flex justify-center">
-            <img
-              src={getImageUrl(`headerImages/tyre_light_front.png`)}
-              alt=""
-            />
+              <img
+                src={getImageUrl(`headerImages/tyre_light_front.png`)}
+                alt=""
+              />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
-              <p className="text-fontColor text-xl">Michelin</p>
+              <p className="text-fontColor text-xl">Toyo</p>
               <div className="flex flex-col justify-center items-center">
-              <h2 className="text-base">Michelin Primacy MXM4</h2>
-              <h4 className="font-bold text-headerTop text-sm">2020 BMW 3 Series</h4>
-              <div className="flex">
-                <p className="hr px-1 mx-1 text-black">Tyre size</p>
-                <p className="hr px-1 rounded-sm mx-1 text-black">225/55r17</p>
+                <h2 className="text-base">Toyo Proxez 4 Pluse</h2>
+                <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
+                  2022 Chevrolet Malibu
+                </h4>
+                <div className="flex">
+                  <p className="hr px-1 mx-1 text-black">Tyre size</p>
+                  <p className="hr px-1 rounded-sm mx-1 text-black">
+                    235/50R18
+                  </p>
+                </div>
+                <div className="flex">
+                  <figure className="flex justify-center items-center">
+                    <img
+                      src={getImageUrl(`headerImages/star.png`)}
+                      alt=""
+                      className="pl-2 pr-1"
+                    />
+                    <figcaption className="pr-2 text-black">4.6/5</figcaption>
+                  </figure>
+                  <p className="review_ratings text-sm pl-2">
+                    135 <span className="text-$color">Review</span>
+                  </p>
+                </div>
+                <div className="flex text-base">
+                  <p className="mx-1 text-red">$30.00</p>
+                </div>
+                <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+                  Add to cart
+                </button>
               </div>
-              <div className="flex text-base">
-                <p className="mx-1 line-through">$100.00</p>
-                <p className="mx-1 text-red">80.00</p>
-              </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">Add to cart</button>
-            </div>
             </div>
           </div>
-
         </div>
+        <ShopSectionBottom />
       </div>
     </div>
   );

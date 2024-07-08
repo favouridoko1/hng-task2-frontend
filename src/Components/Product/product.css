@@ -12,6 +12,9 @@ brand-icons {
     border-left: 2px solid #d6d6d6;
     padding-left: 16px;
 }
+.review_ratings {
+    border-left: 2px solid #d6d6d6;
+}
 
 .showAll {
     padding-left: 160px;
