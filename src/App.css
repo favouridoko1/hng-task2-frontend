@@ -6,11 +6,14 @@ body {
     font-size: 14px;
     font-family: 'Lexend';
     color: #5E5F60;
+    /* overflow-x: hidden; */
+
 }
 
 .app {
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
     width: 100%;
 }
 

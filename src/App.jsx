@@ -5,7 +5,7 @@ import Cart from "./Components/CartPage/Cart";
 import Product from "./Components/Product/Product";
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Routes>
         <Route path="/products" element={ <Product />} />
         <Route path="/cart" element={<Cart />} />

@@ -5,7 +5,7 @@ const FilterSection = () => {
   let starwhite = <img src={getImageUrl(`headerImages/starwhite.png`)} alt="" />;
   
   return (
-    <div className="text-sm text-nowrap">
+    <div className="text-sm text-nowrap filterContainer">
       <h3 className="text-lg px-9 text-black-">Filter</h3>
       <div className="filterborder px-8 flex flex-col">
         <hr className="hr" />

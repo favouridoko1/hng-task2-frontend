@@ -1,8 +1,11 @@
 import { getImageUrl } from "../../../utils/utils";
 import ShopSectionBottom from "./ShopSectionBottom";
+import { useNavigate } from 'react-router-dom';
+
 const ShopSection = () => {
+  const navigate = useNavigate();
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col shoppingParent">
       <div className="flex flex-col items-center px-28 Tyrelayout">
         <h2 className="text-2xl py-2 borderBottom">Tyres</h2>
         {/* <hr className="hr" /> */}
@@ -20,20 +23,20 @@ const ShopSection = () => {
           reduced enviroment impact.
         </p>
       </div>
-      <div className="text-2xl bg-grey py-3 mx-28 rounded">
+      <div className="text-2xl bg-grey py-3 mx-28 rounded imgagePart">
         <h2 className="p-2 font-medium px-8 text-topSelling">Top Selling</h2>
         <div className="flex justify-around">
           <div className="flex flex-col justify-center">
             <div className="flex justify-center">
               <img
                 src={getImageUrl(`headerImages/tyre_dark_right.png`)}
-                alt=""
+                alt="" className="tyre"
               />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
               <p className="text-fontColor text-sm">Michelin</p>
               <div className="flex flex-col justify-center items-center">
-                <h2 className="text-base">Michelin Primacy MXM4</h2>
+                <h2 className="text-base text-nowrap">Michelin Primacy MXM4</h2>
                 <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
                   2020 BMW 3 Series
                 </h4>
@@ -59,7 +62,7 @@ const ShopSection = () => {
                 <div className="flex text-base">
                   <p className="m-1 text-red">$80.00</p>
                 </div>
-                <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+                <button onClick={()=> navigate('/cart')} className="bg-green rounded-3xl text-white font-medium px-6 h-10">
                   Add to cart
                 </button>
               </div>
@@ -67,12 +70,12 @@ const ShopSection = () => {
           </div>
           <div className="flex flex-col justify-center">
             <div className="flex justify-center">
-              <img src={getImageUrl(`headerImages/three-tyre.png`)} alt="" />
+              <img src={getImageUrl(`headerImages/three-tyre.png`)} alt="" className="tyre" />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
               <p className="text-fontColor text-sm">Falken</p>
-              <div className="flex flex-col justify-center items-center">
-                <h2 className="text-base">Falken Ziex ZE950 A/S</h2>
+              <div className="flex flex-col text-nowrap justify-center items-center">
+                <h2 className="text-base ">Falken Ziex ZE950 A/S</h2>
                 <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
                   2013 Nisson Altima
                 </h4>
@@ -98,7 +101,7 @@ const ShopSection = () => {
                 <div className="flex text-base">
                   <p className="mx-1 text-red">$40.00</p>
                 </div>
-                <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+                <button onClick={()=> navigate('/cart')} className="bg-green rounded-3xl text-white font-medium px-6 h-10">
                   Add to cart
                 </button>
               </div>
@@ -108,12 +111,12 @@ const ShopSection = () => {
             <div className="flex justify-center">
               <img
                 src={getImageUrl(`headerImages/tyre_light_front.png`)}
-                alt=""
+                alt="" className="tyre"
               />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
               <p className="text-fontColor text-sm">Toyo</p>
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center text">
                 <h2 className="text-base">Toyo Proxez 4 Pluse</h2>
                 <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
                   2022 Chevrolet Malibu
@@ -140,7 +143,7 @@ const ShopSection = () => {
                 <div className="flex text-base">
                   <p className="mx-1 text-red">$30.00</p>
                 </div>
-                <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+                <button onClick={()=> navigate('/cart')} className="bg-green rounded-3xl text-white font-medium px-6 h-10">
                   Add to cart
                 </button>
               </div>

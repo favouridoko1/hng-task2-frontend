@@ -1,22 +1,25 @@
+
+import { useNavigate } from 'react-router-dom'
 import "../product.css";
 import {getImageUrl} from '../../../utils/utils'
   const Header = () => {
+    const navigate = useNavigate()
   return (
-    <div>
+    <nav>
       <div className="bg-headerTop flex justify-center">
-        <p className="text-white2 tracking-wider">
+        <p className="text-white2 tracking-wider top">
           LIMITED OFFER:30% OFF. Use RABBIT30 at Checkout.{" "}
           <span className="text-white">23:15:00</span>
         </p>
       </div>
-      <div className="p-3 px-24 flex brand-icons justify-between align-center hr">
+      <div className="header p-3 px-24 flex brand-icons justify-between align-center hr">
         <div>
           <img
             src={getImageUrl(`headerImages/brand_logo.png`)}
             alt="z brand_logo"
           />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center inputContainer">
           <input
             className="input px-5 outline-0 rounded-full"
             type="text"
@@ -34,13 +37,14 @@ import {getImageUrl} from '../../../utils/utils'
             <img
               src={getImageUrl(`headerImages/bag-2.png`)}
               alt=""
-              className="keyIcon"
+              onClick={()=>navigate('/cart')}
+              className="keyIcon cursor-pointer"
             />
             <p className="count">3</p>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -1,9 +1,12 @@
 import { getImageUrl } from "../../../utils/utils";
+import { useNavigate } from 'react-router-dom';
+
 const ShopSectionBottom = () => {
+  const navigate = useNavigate()
   return (
     <>
-      <div className="flex bg-white py-3 justify-between items-center">
-        <div className="flex flex-col justify-center">
+      <div className="flex bg-white py-3 justify-between items-center images Container">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyre_regular.png`)}
@@ -38,13 +41,13 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$60.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyrelight_left.png`)}
@@ -79,19 +82,19 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$20.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyre_dark_left.png`)}
               alt=""
-              className="px-8 py-3 bg-grey"
+              className="bg-grey"
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
@@ -121,7 +124,7 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$40.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
@@ -130,7 +133,7 @@ const ShopSectionBottom = () => {
       </div>
 
       <div className="flex bg-white py-3 justify-between items-center">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyreBold_left.png`)}
@@ -142,7 +145,7 @@ const ShopSectionBottom = () => {
             <p className="text-fontColor text-sm">Pirelli</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Pirelli P Zero</h2>
-              <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
+              <h4 className="font-bold text-headerTop text-sm m-1 p-2 tex-nowrap bg-grey">
                 2018 Mercedes-Benz GLC
               </h4>
               <div className="flex">
@@ -165,13 +168,13 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$70.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyre_lighter_left.png`)}
@@ -182,7 +185,7 @@ const ShopSectionBottom = () => {
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
             <p className="text-fontColor text-sm">Hankook</p>
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-base">Hankook Ventus V12 evo2</h2>
+              <h2 className="text-base text-nowrap">Hankook Ventus V12 evo2</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
                 2020 Lexus ES
               </h4>
@@ -206,14 +209,14 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$20.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyre_lighter_left.png`)}
@@ -224,7 +227,7 @@ const ShopSectionBottom = () => {
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
             <p className="text-fontColor text-sm">Continental</p>
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-base">Continental TrueContact Tour</h2>
+              <h2 className="text-base text-wrap">Continental TrueContact Tour</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
                 2017 Toyota Camry
               </h4>
@@ -248,7 +251,7 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$40.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
@@ -260,7 +263,7 @@ const ShopSectionBottom = () => {
 
 
         <div className="flex bg-white py-3 justify-between items-center">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyreBold_left.png`)}
@@ -295,13 +298,13 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$70.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyre_lighter_left.png`)}
@@ -336,14 +339,14 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$20.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
               src={getImageUrl(`headerImages/tyre_lighter_left.png`)}
@@ -353,8 +356,8 @@ const ShopSectionBottom = () => {
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
             <p className="text-fontColor text-sm">Bridgestone</p>
-            <div className="flex flex-col justify-center items-center">
-              <h2 className="text-base">Bridgestone Turanza QuiteTrack</h2>
+            <div className="flex flex-col justify-center items-center text-nowrap">
+              <h2 className="text-base ">Bridgestone Turanza QuiteTrack</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
                 2019 Mercedes-Benz E-class
               </h4>
@@ -378,7 +381,7 @@ const ShopSectionBottom = () => {
               <div className="flex text-base">
                 <p className="mx-1 text-red">$20.00</p>
               </div>
-              <button className="bg-green rounded-3xl text-white font-medium px-6 h-10">
+              <button onClick={()=> navigate('/cart')} className="bg-green cursor-pointer rounded-3xl text-white font-medium px-6 h-10">
                 Add to cart
               </button>
             </div>

@@ -7,8 +7,6 @@ const Product = () => {
     <div>
         <Header />
         <Main />
-
-
     </div>
   )
 }
