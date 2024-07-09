@@ -79,46 +79,48 @@ const Cart = () => {
             />
             <h2 className="text-xl text-topSelling">
               Your Cart{" "}
-              <span className="ml-12 text-base text-fontColor">(3)</span>
+              <span className="ml-44 text-base text-fontColor">(3)</span>
             </h2>
           </li>
-          <table>
+          <table className="text-sm font-semibold text-black">
             <tr>
               <td>
                 <img src={getImageUrl("headerImages/")} alt="" />{" "}
-                <span>Michelin Primacy MXM4</span>
+                <span className="">Michelin Primacy MXM4</span>
               </td>
-              <td>x</td>
+              <td className="text-filterFont font-normal">x</td>
             </tr>
             <tr>
-              <td>
-                <span>2x</span> $80.00
+              <td className="text-filterFont font-normal">
+                <span className="text-fontColor font-light">2x</span> $80.00
               </td>
               <td>$160.00</td>
             </tr>
             <tr>
               <td>Toyo Proxes 4 Plus</td>
-              <td>x</td>
+              <td className="text-fontColor font-light">x</td>
             </tr>
             <tr>
-              <td>1x $30.00</td>
+              <td className="text-filterFont font-normal"><span className="text-fontColor font-light">1x</span> $30.00</td>
               <td>$30.00</td>
             </tr>
             <tr>
               <td>Michelin Premier LTX</td>
-              <td>x</td>
+              <td className="text-fontColor font-light">x</td>
             </tr>
-            <tr>
-              <td>1x $60.00</td>
+          
+            <tr className="bdBottom">
+              <td className="text-filterFont font-normal"><span className="text-fontColor font-light">1x</span> $60.00</td>
               <td>$60.00</td>
             </tr>
-            <tr>
-              <td>Subtotal</td>
+
+            <tr className="bdBottom">
+              <td className="text-fontColor font-light">Subtotal</td>
               <td>$250.00</td>
             </tr>
             <tr>
-              <td>Total</td>
-              <td>$250.00</td>
+              <td className="text-topSelling text-sm font-normal"> TOTAL</td>
+              <td className="text-red text-xl font-normal">$250.00</td>
             </tr>
           </table>
         </ul>
