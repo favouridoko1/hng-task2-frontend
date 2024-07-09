@@ -7,9 +7,9 @@ const App = () => {
   const navigate  = useNavigate();
   return (
     <div className="app">
-      <button onClick={()=>navigate('/products')}>To Product</button>
+      {/* <button onClick={()=>navigate('/products')}>To Product</button> */}
       <Routes>
-        <Route path="/products" element={ <Product />} />
+        <Route path="/" element={ <Product />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
