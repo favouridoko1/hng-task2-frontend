@@ -1,6 +1,8 @@
 import "./cart.css";
 import { getImageUrl } from "../../utils/utils";
+import { useNavigate } from "react-router-dom";
 const Cart = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="p-3 px-24 flex brand-icons justify-between align-center hr">
@@ -67,19 +69,56 @@ const Cart = () => {
         </li>
       </ul>
       <div>
-        <ul className="my-5">
+        <ul className="m-6">
           <li className="flex bdBottom">
-            <img src={getImageUrl("headerImages/arrow-left.png")} alt="" className="font-light mx-2 text-grey" />
-            <h2 className="text-xl text-topSelling">Your Cart <span className="ml-12 text-base text-fontColor">(3)</span></h2>
+            <img
+              onClick={() => navigate("/")}
+              src={getImageUrl("headerImages/arrow-left.png")}
+              alt=""
+              className="font-light mr-2 text-grey cursor-pointer"
+            />
+            <h2 className="text-xl text-topSelling">
+              Your Cart{" "}
+              <span className="ml-12 text-base text-fontColor">(3)</span>
+            </h2>
           </li>
           <table>
             <tr>
-              <td><img src={getImageUrl("headerImages/")} alt="" />  <span>Michelin Primacy MXM4</span></td>
+              <td>
+                <img src={getImageUrl("headerImages/")} alt="" />{" "}
+                <span>Michelin Primacy MXM4</span>
+              </td>
               <td>x</td>
             </tr>
             <tr>
-              <td><span>2x</span> $80.00</td>
+              <td>
+                <span>2x</span> $80.00
+              </td>
               <td>$160.00</td>
+            </tr>
+            <tr>
+              <td>Toyo Proxes 4 Plus</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>1x $30.00</td>
+              <td>$30.00</td>
+            </tr>
+            <tr>
+              <td>Michelin Premier LTX</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>1x $60.00</td>
+              <td>$60.00</td>
+            </tr>
+            <tr>
+              <td>Subtotal</td>
+              <td>$250.00</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$250.00</td>
             </tr>
           </table>
         </ul>
