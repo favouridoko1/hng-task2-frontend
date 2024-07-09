@@ -31,7 +31,7 @@ const ShopSection = () => {
               />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
-              <p className="text-fontColor text-xl">Michelin</p>
+              <p className="text-fontColor text-sm">Michelin</p>
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-base">Michelin Primacy MXM4</h2>
                 <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -70,7 +70,7 @@ const ShopSection = () => {
               <img src={getImageUrl(`headerImages/three-tyre.png`)} alt="" />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
-              <p className="text-fontColor text-xl">Falken</p>
+              <p className="text-fontColor text-sm">Falken</p>
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-base">Falken Ziex ZE950 A/S</h2>
                 <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -112,7 +112,7 @@ const ShopSection = () => {
               />
             </div>
             <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8 bg-white">
-              <p className="text-fontColor text-xl">Toyo</p>
+              <p className="text-fontColor text-sm">Toyo</p>
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-base">Toyo Proxez 4 Pluse</h2>
                 <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">

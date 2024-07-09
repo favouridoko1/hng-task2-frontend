@@ -9,8 +9,7 @@ import {getImageUrl} from '../../../utils/utils'
           <span className="text-white">23:15:00</span>
         </p>
       </div>
-
-      <div className="p-3 px-24 flex brand-icons justify-between align-center">
+      <div className="p-3 px-24 flex brand-icons justify-between align-center hr">
         <div>
           <img
             src={getImageUrl(`headerImages/brand_logo.png`)}
@@ -41,7 +40,6 @@ import {getImageUrl} from '../../../utils/utils'
           </div>
         </div>
       </div>
-
     </div>
   );
 };

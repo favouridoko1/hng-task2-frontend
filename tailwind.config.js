@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       'headerTop': '#05422C',
+      "filterFont":"#5E5F60",
       'white': '#FFF',
       'green': "#17AF26",
       "grey": '#F2F6F4',
@@ -16,7 +17,8 @@ export default {
       'red': '#DC2626',
       "fontColor": "#9D9EA2",
       "topSelling": "#060709",
-      "$color":"#C8C9CB"
+      "$color":"#C8C9CB",
+      "lightGreen": "#F3FBF4"
     },
   },
   plugins: [],

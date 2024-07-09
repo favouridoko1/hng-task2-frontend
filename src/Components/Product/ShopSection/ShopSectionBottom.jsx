@@ -12,7 +12,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-">
-            <p className="text-fontColor text-xl">Michelin</p>
+            <p className="text-fontColor text-sm">Michelin</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Michelin Premier LTX</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -53,7 +53,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
-            <p className="text-fontColor text-xl">Yokohama</p>
+            <p className="text-fontColor text-sm">Yokohama</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Yokohama AVID Ascend GT</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -95,7 +95,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
-            <p className="text-fontColor text-xl">Continental</p>
+            <p className="text-fontColor text-sm">Continental</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Continental TrueContact Tour</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -139,7 +139,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-">
-            <p className="text-fontColor text-xl">Pirelli</p>
+            <p className="text-fontColor text-sm">Pirelli</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Pirelli P Zero</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -180,7 +180,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
-            <p className="text-fontColor text-xl">Hankook</p>
+            <p className="text-fontColor text-sm">Hankook</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Hankook Ventus V12 evo2</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -222,7 +222,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
-            <p className="text-fontColor text-xl">Continental</p>
+            <p className="text-fontColor text-sm">Continental</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Continental TrueContact Tour</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -269,7 +269,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-">
-            <p className="text-fontColor text-xl">Falken</p>
+            <p className="text-fontColor text-sm">Falken</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Falken Azenis FK510</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -310,7 +310,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
-            <p className="text-fontColor text-xl">Pirelli</p>
+            <p className="text-fontColor text-sm">Pirelli</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Pirelli Cinturato P7</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -352,7 +352,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-8">
-            <p className="text-fontColor text-xl">Bridgestone</p>
+            <p className="text-fontColor text-sm">Bridgestone</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Bridgestone Turanza QuiteTrack</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
