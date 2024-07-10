@@ -133,7 +133,7 @@ const Cart = () => {
             <hr />
           </table>
         </ul>
-        <div className="borders rounded-xl my-8 checkoutButtonContainer p-4">
+        <div className="borders rounded-xl my-4 checkoutButtonContainer p-4">
           <ul className="text-sm font-semibold text-black flex justify-between">
             <li>
               <li className="text-fontColor font-light my-3">Subtotal</li>
@@ -160,15 +160,59 @@ const Cart = () => {
           </div>
           <hr />
           <figure>
-            <img src={getImageUrl("headerImages/Statusbar.png")} alt="" className="my-4" />
+            <img
+              src={getImageUrl("headerImages/Statusbar.png")}
+              alt=""
+              className="my-4"
+            />
           </figure>
           <p className="font-medium text-fontColor">
-            Get free <span className="text-topSelling">shipping</span> for orders over <span className="text-red font-normal">$1000.00</span>
+            Get free <span className="text-topSelling">shipping</span> for
+            orders over <span className="text-red font-normal">$1000.00</span>
           </p>
-          <Link className="text-topSelling underline" to='/checkout'>Continue Shoping</Link>
-          <div className="mt-2  text-white">
-          <button onClick={()=>navigate('/checkout')} className="bg-fontColor px-32 py-3 rounded-3xl borders checkoutBtn">Checkout</button>
-
+          <Link className="text-topSelling underline" to="/checkout">
+            Continue Shoping
+          </Link>
+          <div className="my-2  text-white">
+            <button
+              onClick={() => navigate("/checkout")}
+              className="bg-fontColor px-32 py-3 rounded-3xl borders mb-2 checkoutBtn"
+            >
+              Checkout
+            </button>
+            <hr />
+            <p className="text-fontColor text-sm mt-2">
+              SECURE PAYMENTS PROVIDED BY
+            </p>
+            <figure className="flex gap-5 mx-3">
+              <span>
+                <img
+                  src={getImageUrl("headerImages/master_card.png")}
+                  alt=""
+                  className="my-4"
+                />
+              </span>
+              <span>
+                <img
+                  src={getImageUrl("headerImages/Visa.png")}
+                  alt=""
+                  className="my-4"
+                />
+              </span>
+              <span>
+                <img
+                  src={getImageUrl("headerImages/binace.png")}
+                  alt=""
+                  className="my-4"
+                />
+              </span>
+              <span></span>
+              <img
+                src={getImageUrl("headerImages/Clip_path_group.png")}
+                alt=""
+                className="my-4"
+              />
+            </figure>
           </div>
         </div>
       </div>
