@@ -1,6 +1,6 @@
 import "./cart.css";
 import { getImageUrl } from "../../utils/utils";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const Cart = () => {
   const navigate = useNavigate();
   return (
@@ -148,7 +148,7 @@ const Cart = () => {
               <li className="my-3">$260.00</li>
             </li>
           </ul>
-          <div className="flex">
+          <div className="flex my-2">
             <input
               type="text"
               placeholder="Coupon Code"
@@ -157,6 +157,18 @@ const Cart = () => {
             <button className="bg-lightGreen text-green text-sm font-medium rounded-full text-nowrap px-3">
               Apply Coupon
             </button>
+          </div>
+          <hr />
+          <figure>
+            <img src={getImageUrl("headerImages/Statusbar.png")} alt="" className="my-4" />
+          </figure>
+          <p className="font-medium text-fontColor">
+            Get free <span className="text-topSelling">shipping</span> for orders over <span className="text-red font-normal">$1000.00</span>
+          </p>
+          <Link className="text-topSelling underline" to='/checkout'>Continue Shoping</Link>
+          <div className="mt-2  text-white">
+          <button className="bg-fontColor px-32 py-3 rounded-3xl borders">Checkout</button>
+
           </div>
         </div>
       </div>
