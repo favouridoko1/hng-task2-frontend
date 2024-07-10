@@ -68,7 +68,7 @@ const Cart = () => {
           </figure>
         </li>
       </ul>
-      <div className="flex items-start justify-evenly checkOutParentContainer">
+      <div className="flex items-start justify-evenly checkOutParentContainer flex-wrap">
         <ul className="m-6 yourCartContainer">
           <li className="flex items-center bdBottom">
             <figure>
@@ -185,35 +185,87 @@ const Cart = () => {
               SECURE PAYMENTS PROVIDED BY
             </p>
             <figure className="flex gap-5 mx-3">
-              <span>
+              <span className="my-4 p-2 borders">
+                <img src={getImageUrl("headerImages/master_card.png")} alt="" />
+              </span>
+              <span className="my-4 p-2 borders">
+                <img src={getImageUrl("headerImages/Visa.png")} alt="" />
+              </span>
+              <span className="my-4 p-2 borders">
+                <img src={getImageUrl("headerImages/binace.png")} alt="" />
+              </span>
+              <span className="my-4 p-2 borders">
                 <img
-                  src={getImageUrl("headerImages/master_card.png")}
+                  src={getImageUrl("headerImages/Clip_path_group.png")}
                   alt=""
-                  className="my-4"
                 />
               </span>
-              <span>
-                <img
-                  src={getImageUrl("headerImages/Visa.png")}
-                  alt=""
-                  className="my-4"
-                />
-              </span>
-              <span>
-                <img
-                  src={getImageUrl("headerImages/binace.png")}
-                  alt=""
-                  className="my-4"
-                />
-              </span>
-              <span></span>
-              <img
-                src={getImageUrl("headerImages/Clip_path_group.png")}
-                alt=""
-                className="my-4"
-              />
             </figure>
           </div>
+        </div>
+        <div className="mr-52 deliverInfoContainer">
+          <div className="flex justify-between">
+            <h2 className="text-green text-sm font-medium text-nowrap">
+              Delivery
+            </h2>
+            <h2 className="text-green text-sm font-medium text-nowrap">
+              Free Returns
+            </h2>
+          </div>
+          <ul className="flex gap-4 deliveryInfo ">
+            <li className="borders p-4 font-normal w-52 infoCard">
+              <figure>
+                <img
+                  src={getImageUrl("headerImages/transaction-minus.png")}
+                  alt="" className="p-3 rounded-3xl bg-grey"
+                />
+                <br />
+                <figcaption>
+                  <span className="text-topSelling text-lg">
+                    Order by 10pm for free next day delivery on orderr over $100
+                  </span>
+                  <br />
+                  <br />
+                  <span className="text-base">
+                    We deliver Monday to Saturday - excluding Holidays
+                  </span>
+                </figcaption>
+              </figure>
+            </li>
+            <li className="borders p-4 font-normal w-52 infoCard">
+              <figure>
+                <img
+                  src={getImageUrl("headerImages/box-time.png")}
+                  alt="" className="p-3 rounded-3xl bg-grey"
+                />
+                <br />
+                <figcaption>
+                  <span className="text-topSelling text-lg">
+                    Free next day delivery to stores.
+                  </span>
+                  <br />
+                  <br />
+                  <span className="text-base">
+                    Home delivery is $4.99 for orders under $100 and is Free for all orders over $100
+                  </span>
+                </figcaption>
+              </figure>
+            </li>
+            <li className="borders p-4 font-normal w-52 infoCard">
+              <figure>
+                <img
+                  src={getImageUrl("headerImages/truck-time.png")}
+                  alt="" className="p-3 rounded-3xl bg-grey"
+                />
+                <br />
+                <figcaption>
+                  <span className="text-base">
+                    Home delivery is $4.99 for orders under $100 and is Free for all orders over $100
+                  </span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </div>
     </>

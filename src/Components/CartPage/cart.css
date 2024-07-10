@@ -112,11 +112,21 @@ td {
         justify-items: center;
     }
 
-
     .checkoutButtonContainer {
         margin-left: 0;
         order: 1;
     }
+    .deliverInfoContainer {
+        margin-right: 0;
+    }
 
+    .deliveryInfo {
+        flex-direction: column;
+    }
+
+    .infoCard {
+        max-width: 400px;
+        min-width: 300px;
+    }
    
 }
