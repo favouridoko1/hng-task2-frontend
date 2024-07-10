@@ -79,8 +79,8 @@ const Cart = () => {
                 className="font-light mr-2 text-grey cursor-pointer"
               />
             </figure>
-            <h2 className="text-xl text-topSelling my-3">
-              Your Cart{" "}
+            <h2 className="text-xl text-topSellin text-nowrap">
+              Your Cart
               <span className="ml-96 text-base text-fontColor">(3)</span>
             </h2>
           </li>
@@ -92,7 +92,7 @@ const Cart = () => {
                 </figure>
                 <span className="">Michelin Primacy MXM4</span>
               </td>
-              <td className="text-fontColor font-light">x</td>
+              <td className="text-fontColor font-light ">x</td>
             </tr>
             <tr>
               <td className="text-filterFont font-normal">
@@ -120,7 +120,7 @@ const Cart = () => {
               </td>
               <td>$60.00</td>
             </tr>
-              <hr />
+            <hr />
             <tr>
               <td className="text-fontColor font-light">Subtotal</td>
               <td>$250.00</td>
@@ -130,33 +130,33 @@ const Cart = () => {
               <td className="text-topSelling text-sm font-normal">TOTAL</td>
               <td className="text-red text-xl font-normal">$250.00</td>
             </tr>
+            <hr />
           </table>
         </ul>
-        <div className="borders my-8 checkoutButtonContainer">
-          <table className="text-sm font-semibold text-black">
-            <tr>
-              <td className="text-fontColor font-light">Subtotal</td>
-              <td>$250.00</td>
-            </tr>
-            <tr>
-              <td className="text-fontColor font-light">Discount</td>
-              <td>$250.00</td>
-            </tr>
-            <tr>
-              <td className="text-fontColor font-light">Shipping Costs</td>
-              <td>$10.00</td>
-            </tr>
-            <tr>
-              <td className="text-topSelling font-bold">TOTAL</td>
-              <td>$26O.00</td>
-            </tr>
-          </table>
+        <div className="borders rounded-xl my-8 checkoutButtonContainer p-4">
+          <ul className="text-sm font-semibold text-black flex justify-between">
+            <li>
+              <li className="text-fontColor font-light my-3">Subtotal</li>
+              <li className="text-fontColor font-light my-3">Discount</li>
+              <li className="text-fontColor font-light my-3">Shipping Costs</li>
+              <li className="text-topSelling font-bold my-3">TOTAL</li>
+            </li>
+            <li>
+              <li className="my-3">$250.00</li>
+              <li className="my-3">$250.00</li>
+              <li className="my-3">$10.00</li>
+              <li className="my-3">$260.00</li>
+            </li>
+          </ul>
           <div className="flex">
-          <input type="text" placeholder="Coupon Code" className="h-12 px-2 outline-none borders rounded mr-3" />
-          <button className="bg-lightGreen text-green text-sm font-normal rounded-3xl px-2">
-           Apply Coupon
-          </button>
-
+            <input
+              type="text"
+              placeholder="Coupon Code"
+              className="h-12 px-2 outline-none borders rounded mr-3"
+            />
+            <button className="bg-lightGreen text-green text-sm font-medium rounded-full text-nowrap px-3">
+              Apply Coupon
+            </button>
           </div>
         </div>
       </div>
