@@ -5,7 +5,7 @@ const Cart = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="p-3 px-24 flex brand-icons justify-between align-center hr">
+      <div className="p-3 px-24 flex brand-icons justify-between align-center">
         <ul className=" menuIconContainer">
           <li>
             <img
@@ -130,12 +130,27 @@ const Cart = () => {
               <td className="text-red text-xl font-normal">$250.00</td>
             </tr>
           </table>
+          <div className="borders">
+            <table className="text-sm font-semibold text-black">
+              <tr>
+                <td className="text-fontColor font-light">Subtotal</td>
+                <td>$250.00</td>
+              </tr>
+              <tr>
+                <td className="text-fontColor font-light">Discount</td>
+                <td>$250.00</td>
+              </tr>
+              <tr>
+                <td className="text-fontColor font-light">Shipping Costs</td>
+                <td>$10.00</td>
+              </tr>
+              <tr>
+                <td className="text-topSelling font-bold">TOTAL</td>
+                <td>$26O.00</td>
+              </tr>
+            </table>
+          </div>
         </ul>
-        <div className="borders">
-          <table>
-            <tr></tr>
-          </table>
-        </div>
       </div>
     </>
   );
