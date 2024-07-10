@@ -25,7 +25,7 @@ import {getImageUrl} from '../../../utils/utils'
             type="text"
             placeholder="Search"
           />
-          <button className=" bg-green py-2 p-3 rounded-full">
+          <button className=" bg-green py-2 p-4 rounded-full">
             <img
               src={getImageUrl(`headerImages/search-normal.png`)}
               alt="search_icon"
