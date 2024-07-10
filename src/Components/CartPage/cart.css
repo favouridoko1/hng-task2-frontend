@@ -82,7 +82,6 @@ td {
         border-radius: 100px;
         width: 35px;
         height: 30px;
-        /* bg-lightGreen text-green text-sm font-medium rounded-full text-nowrap px-3 */
     }
 
     .yourCartContainer {
@@ -100,6 +99,10 @@ td {
         width: 300px;
         padding: 10px 0;
     }
+}
+
+.checkoutBtn:hover {
+    background : #17AF26;
 }
 
 @media screen and (max-width:863px) {

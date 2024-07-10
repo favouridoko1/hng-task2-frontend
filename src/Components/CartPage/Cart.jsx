@@ -167,7 +167,7 @@ const Cart = () => {
           </p>
           <Link className="text-topSelling underline" to='/checkout'>Continue Shoping</Link>
           <div className="mt-2  text-white">
-          <button className="bg-fontColor px-32 py-3 rounded-3xl borders">Checkout</button>
+          <button onClick={()=>navigate('/checkout')} className="bg-fontColor px-32 py-3 rounded-3xl borders checkoutBtn">Checkout</button>
 
           </div>
         </div>
