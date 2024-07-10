@@ -68,7 +68,7 @@ const Cart = () => {
           </figure>
         </li>
       </ul>
-      <div>
+      <div className="flex items-start justify-evenly">
         <ul className="m-6 yourCartContainer">
           <li className="flex items-center bdBottom">
             <figure>
@@ -114,43 +114,51 @@ const Cart = () => {
               <td>Michelin Premier LTX</td>
               <td className="text-fontColor font-light">x</td>
             </tr>
-
-            <tr className="bdBottom">
+            <tr>
               <td className="text-filterFont font-normal">
                 <span className="text-fontColor font-light">1x</span> $60.00
               </td>
               <td>$60.00</td>
             </tr>
-            <tr className="bdBottom">
+              <hr />
+            <tr>
               <td className="text-fontColor font-light">Subtotal</td>
               <td>$250.00</td>
             </tr>
+            <hr />
             <tr>
               <td className="text-topSelling text-sm font-normal">TOTAL</td>
               <td className="text-red text-xl font-normal">$250.00</td>
             </tr>
           </table>
-          <div className="borders">
-            <table className="text-sm font-semibold text-black">
-              <tr>
-                <td className="text-fontColor font-light">Subtotal</td>
-                <td>$250.00</td>
-              </tr>
-              <tr>
-                <td className="text-fontColor font-light">Discount</td>
-                <td>$250.00</td>
-              </tr>
-              <tr>
-                <td className="text-fontColor font-light">Shipping Costs</td>
-                <td>$10.00</td>
-              </tr>
-              <tr>
-                <td className="text-topSelling font-bold">TOTAL</td>
-                <td>$26O.00</td>
-              </tr>
-            </table>
-          </div>
         </ul>
+        <div className="borders my-8 checkoutButtonContainer">
+          <table className="text-sm font-semibold text-black">
+            <tr>
+              <td className="text-fontColor font-light">Subtotal</td>
+              <td>$250.00</td>
+            </tr>
+            <tr>
+              <td className="text-fontColor font-light">Discount</td>
+              <td>$250.00</td>
+            </tr>
+            <tr>
+              <td className="text-fontColor font-light">Shipping Costs</td>
+              <td>$10.00</td>
+            </tr>
+            <tr>
+              <td className="text-topSelling font-bold">TOTAL</td>
+              <td>$26O.00</td>
+            </tr>
+          </table>
+          <div className="flex">
+          <input type="text" placeholder="Coupon Code" className="h-12 px-2 outline-none borders rounded mr-3" />
+          <button className="bg-lightGreen text-green text-sm font-normal rounded-3xl px-2">
+           Apply Coupon
+          </button>
+
+          </div>
+        </div>
       </div>
     </>
   );

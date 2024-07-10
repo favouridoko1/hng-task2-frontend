@@ -1,5 +1,6 @@
 .bdBottom {
     border-bottom: 1px solid #F4F4F4;
+    width: 500px;
 }
 
 .borders {
@@ -27,12 +28,24 @@ th {
 
 th,
 td {
-    width: 470px;
+    width: 350px;
     padding: 10px
 }
 
 .yourCartContainer {
-    width: 1440px;
+    width: 600px;
+}
+
+.checkoutButtonContainer {
+    width: 520px;
+    padding: 24px;
+    margin-right: 40px;
+}
+
+hr {
+    border: 1px solid #F4F4F4;
+    width: 550px;
+
 }
 
 
