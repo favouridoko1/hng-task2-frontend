@@ -4,6 +4,7 @@ import { Routes, Route} from 'react-router-dom';
 import Cart from "./Components/CartPage/Cart";
 import Product from "./Components/Product/Product";
 import Checkout from "./Components/CheckoutPage/Checkout";
+import Error from "./Components/Error/Error";
 const App = () => {
   return (
     <div className="app">
@@ -11,6 +12,8 @@ const App = () => {
         <Route path="/" element={ <Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path='*' element={<Error />} />
+
       </Routes>
     </div>
   );
