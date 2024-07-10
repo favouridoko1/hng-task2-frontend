@@ -27,7 +27,7 @@ const Cart = () => {
             type="text"
             placeholder="Search"
           />
-          <button className=" flex justify-center items-center bg-green w-12 h-10 rounded-full">
+          <button className=" flex justify-center items-center bg-green w-10 h-10 rounded-full">
             <img
               src={getImageUrl(`headerImages/search-normal.png`)}
               alt="search_icon"
@@ -69,26 +69,30 @@ const Cart = () => {
         </li>
       </ul>
       <div>
-        <ul className="m-6">
-          <li className="flex bdBottom">
-            <img
-              onClick={() => navigate("/")}
-              src={getImageUrl("headerImages/arrow-left.png")}
-              alt=""
-              className="font-light mr-2 text-grey cursor-pointer"
-            />
-            <h2 className="text-xl text-topSelling">
+        <ul className="m-6 yourCartContainer">
+          <li className="flex items-center bdBottom">
+            <figure>
+              <img
+                onClick={() => navigate("/")}
+                src={getImageUrl("headerImages/arrow-left.png")}
+                alt=""
+                className="font-light mr-2 text-grey cursor-pointer"
+              />
+            </figure>
+            <h2 className="text-xl text-topSelling my-3">
               Your Cart{" "}
-              <span className="ml-44 text-base text-fontColor">(3)</span>
+              <span className="ml-96 text-base text-fontColor">(3)</span>
             </h2>
           </li>
           <table className="text-sm font-semibold text-black">
             <tr>
-              <td>
-                <img src={getImageUrl("headerImages/")} alt="" />{" "}
+              <td className="flex items-center">
+                <figure>
+                  <img src={getImageUrl("headerImages/Image.png")} alt="" />{" "}
+                </figure>
                 <span className="">Michelin Primacy MXM4</span>
               </td>
-              <td className="text-filterFont font-normal">x</td>
+              <td className="text-fontColor font-light">x</td>
             </tr>
             <tr>
               <td className="text-filterFont font-normal">
@@ -101,29 +105,37 @@ const Cart = () => {
               <td className="text-fontColor font-light">x</td>
             </tr>
             <tr>
-              <td className="text-filterFont font-normal"><span className="text-fontColor font-light">1x</span> $30.00</td>
+              <td className="text-filterFont font-normal">
+                <span className="text-fontColor font-light">1x</span> $30.00
+              </td>
               <td>$30.00</td>
             </tr>
             <tr>
               <td>Michelin Premier LTX</td>
               <td className="text-fontColor font-light">x</td>
             </tr>
-          
+
             <tr className="bdBottom">
-              <td className="text-filterFont font-normal"><span className="text-fontColor font-light">1x</span> $60.00</td>
+              <td className="text-filterFont font-normal">
+                <span className="text-fontColor font-light">1x</span> $60.00
+              </td>
               <td>$60.00</td>
             </tr>
-
             <tr className="bdBottom">
               <td className="text-fontColor font-light">Subtotal</td>
               <td>$250.00</td>
             </tr>
             <tr>
-              <td className="text-topSelling text-sm font-normal"> TOTAL</td>
+              <td className="text-topSelling text-sm font-normal">TOTAL</td>
               <td className="text-red text-xl font-normal">$250.00</td>
             </tr>
           </table>
         </ul>
+        <div className="borders">
+          <table>
+            <tr></tr>
+          </table>
+        </div>
       </div>
     </>
   );

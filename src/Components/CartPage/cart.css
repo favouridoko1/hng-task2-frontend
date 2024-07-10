@@ -2,27 +2,37 @@
     border-bottom: 1px solid #F4F4F4;
 }
 
+.borders {
+    border: 1px solid #F4F4F4;
+}
+
 .inputContainer {
     width: 500px;
     height: 48px;
 }
 
 .input {
-   width: 100%;
-   height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 table {
     border-collapse: collapse;
 }
+
 th {
-    background-color:green;
-    Color:white;
+    background-color: green;
+    Color: white;
 }
-th, td {
-    width:200px;
-    padding:5px
- 
+
+th,
+td {
+    width: 470px;
+    padding: 10px
+}
+
+.yourCartContainer {
+    width: 1440px;
 }
 
 
@@ -39,22 +49,23 @@ th, td {
         display: flex;
         align-items: center;
     }
+
     .menuIcon {
         display: block;
     }
-    
+
 
     .inputContainer {
         margin-top: 15px;
         margin-right: 100px;
         max-width: 300px;
         height: 38px;
-        
+
         /* display: flex; */
     }
 
     .input {
-       width: 100%;
-       height: 100%;
+        width: 100%;
+        height: 100%;
     }
 }
