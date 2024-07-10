@@ -27,7 +27,7 @@ const Cart = () => {
             type="text"
             placeholder="Search"
           />
-          <button className=" flex justify-center items-center bg-green w-10 h-10 rounded-full">
+          <button className="button flex justify-center items-center bg-green w-10 h-10 rounded-full">
             <img
               src={getImageUrl(`headerImages/search-normal.png`)}
               alt="search_icon"
@@ -68,7 +68,7 @@ const Cart = () => {
           </figure>
         </li>
       </ul>
-      <div className="flex items-start justify-evenly">
+      <div className="flex items-start justify-evenly checkOutParentContainer">
         <ul className="m-6 yourCartContainer">
           <li className="flex items-center bdBottom">
             <figure>
@@ -81,7 +81,7 @@ const Cart = () => {
             </figure>
             <h2 className="text-xl text-topSellin text-nowrap">
               Your Cart
-              <span className="ml-96 text-base text-fontColor">(3)</span>
+              <span className="ml-80 text-base text-fontColor">(3)</span>
             </h2>
           </li>
           <table className="text-sm font-semibold text-black">
