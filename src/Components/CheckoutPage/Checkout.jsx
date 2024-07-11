@@ -55,22 +55,29 @@ const Checkout = () => {
               <div>
                 <label htmlFor="country"> COUNTRY / REGION *</label>
                 <br />
-                <input
-                  type="text"
-                  id="country"
-                  name="country"
-                  placeholder="Nigeria"
-                  className="outline-none borders rounded-xl py-3 regions px-5 text-black"
-                />{" "}
+                <div className="relative">
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Nigeria"
+                    className="outline-none borders rounded-xl py-3 regions px-5 text-black"
+                  />
+                  <img
+                    src={getImageUrl("headerImages/Arrow.png")}
+                    alt=""
+                    className="absolute top-2 right-3 dropdownIcon"
+                  />
+                </div>
                 <br />
                 <br />
-                <label htmlFor="country"> STATE *</label>
+                <label htmlFor="country">STATE *</label>
                 <br />
                 <input
                   type="text"
                   id="state"
                   name="state"
-                  placeholder="Nigeria"
+                  placeholder="Abuja"
                   className="outline-none borders rounded-xl py-3 regions px-5 text-black"
                 />
                 <br />
@@ -84,10 +91,242 @@ const Checkout = () => {
                 />
               </div>
             </form>
+            <form className="flex my-6 gap-3 text-nowrap">
+              <div>
+                <label htmlFor="city-town">TOWN / CITY *</label>
+                <br />
+                <input
+                  type="text"
+                  id="city-town"
+                  name="city-town"
+                  placeholder="Apapa"
+                  className="outline-none borders rounded-xl py-3 px-5 text-black"
+                />
+              </div>
+              <div>
+                <label htmlFor="city-town">PROVICE *</label>
+                <br />
+                <div className="relative">
+                  <input
+                    type="text"
+                    id="city-town"
+                    name="city-town"
+                    placeholder="Mainland"
+                    className="outline-none borders rounded-xl py-3 px-5"
+                  />
+                  <img
+                    src={getImageUrl("headerImages/Arrow.png")}
+                    alt=""
+                    className="absolute top-2 right-3 dropdownIcon"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="city-town">PPOSTCODE / ZIP *</label>
+                <br />
+                <input
+                  type="text"
+                  id="city-town"
+                  name="city-town"
+                  placeholder="21945"
+                  className="outline-none borders rounded-xl py-3 px-5"
+                />
+              </div>
+            </form>
+            <form className="flex my-6 gap-3 text-nowrap">
+              <div>
+                <label htmlFor="fname">Phone ( Optional ) *</label>
+                <br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="+234 71 66675 778"
+                  className="outline-none borders rounded-xl py-3 px-5 text-black"
+                />
+              </div>
+              <div>
+                <label htmlFor="lname">Email ( Optional )*</label>
+                <br />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="johndoe@example.com"
+                  className="outline-none borders rounded-xl py-3 px-5"
+                />
+              </div>
+            </form>
+            <hr />
+            <br />
+            <p className="text-black text-base">
+              <span>
+                <input type="checkbox" className="mr-2" />
+              </span>
+              Ship to a different address?
+            </p>
+            <br />
+            <form className="flex my-6 gap-3 text-nowrap">
+              <div>
+                <label htmlFor="fname">First name *</label>
+                <br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="John"
+                  className="outline-none borders rounded-xl py-3 px-5 text-black"
+                />
+              </div>
+              <div>
+                <label htmlFor="lname">Last name *</label>
+                <br />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Doe"
+                  className="outline-none borders rounded-xl py-3 px-5"
+                />
+              </div>
+            </form>
+
+            <form className="flex flex-col my-6 gap-3 text-nowrap">
+              <div>
+                <label htmlFor="country"> COUNTRY / REGION *</label>
+                <br />
+                <div className="relative">
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Nigeria"
+                    className="outline-none borders rounded-xl py-3 regions px-5 text-black"
+                  />{" "}
+                  <img
+                    src={getImageUrl("headerImages/Arrow.png")}
+                    alt=""
+                    className="absolute top-2 right-3 dropdownIcon"
+                  />
+                </div>
+                <br />
+                <br />
+                <label htmlFor="country">STATE *</label>
+                <br />
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="Abuja"
+                  className="outline-none borders rounded-xl py-3 regions px-5 text-black"
+                />
+                <br />
+                <br />
+                <input
+                  type="text"
+                  id="state"
+                  name="apartment"
+                  placeholder="Apartment"
+                  className="outline-none borders rounded-xl py-3 regions px-5 text-black"
+                />
+              </div>
+            </form>
+            <form className="flex my-6 gap-3 text-nowrap">
+              <div>
+                <label htmlFor="city-town">TOWN / CITY *</label>
+                <br />
+                <input
+                  type="text"
+                  id="city-town"
+                  name="city-town"
+                  placeholder="Wusa"
+                  className="outline-none borders rounded-xl py-3 px-5 text-black"
+                />
+              </div>
+              <div>
+                <label htmlFor="city-town">PROVICE *</label>
+                <br />
+                <div className="relative">
+                  <input
+                    type="text"
+                    id="city-town"
+                    name="city-town"
+                    placeholder="North Central"
+                    className="outline-none borders rounded-xl py-3 px-5"
+                  />
+
+                  <img
+                    src={getImageUrl("headerImages/Arrow.png")}
+                    alt=""
+                    className="absolute top-2 right-3 dropdownIcon"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="city-town">PPOSTCODE / ZIP *</label>
+                <br />
+                <input
+                  type="text"
+                  id="city-town"
+                  name="city-town"
+                  placeholder="21945"
+                  className="outline-none borders rounded-xl py-3 px-5"
+                />
+              </div>
+            </form>
+            <br />
+            <p>ORDER NOTES (OPTIONAL)</p>
+            <br />
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Notes about your order, eg. special notes for delivery"
+              className="outline-none borders rounded-xl regions h-24 px-5 text-black mb-6"
+            />
+
+            <hr />
+            <br />
+            <form className="flex flex-col my-6 gap-3 text-nowrap">
+              <div>
+                <label htmlFor="country">
+                  {" "}
+                  What would you like us to do if an item is out of stock *
+                </label>
+                <br />
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="Contact me (with delay)"
+                  className="outline-none borders rounded-xl py-3 regions px-5 text-black"
+                />{" "}
+                <br />
+                <br />
+                <label htmlFor="country">Where did you hear about us *</label>
+                <br />
+                <div className="relative">
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    placeholder="Notes about your order, eg. special notes for delivery"
+                    className="outline-none borders rounded-xl py-3 regions px-5 text-black"
+                  />
+                  <img
+                    src={getImageUrl("headerImages/Arrow.png")}
+                    alt=""
+                    className="absolute top-2 right-3 dropdownIcon"
+                  />
+                </div>
+                <br />
+                <br />
+              </div>
+            </form>
           </li>
         </ul>
 
-        <div className="borders rounded-xl my-4 checkoutButtonContainer p-4">
+        <div className="borders rounded-xl my-4 checkoutButtonContainer p-4 ">
           <ul className="text-sm font-semibold text-black flex justify-between">
             <li className="text-fontColor font-light my-3">
               <li className="my-3">Subtotal</li>

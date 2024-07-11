@@ -1,4 +1,6 @@
-
+#city-town {
+  max-width: 140px;
+}
 
 input[type='checkbox'] {
     accent-color: #17AF26;
@@ -80,7 +82,15 @@ input[type='checkbox'] {
     width: 440px;
   }
 
+  .checkoutButtonContainer {
+    max-height: 690px;
+  }
+
   @media screen and (max-width: 862px) {
+    #city-town {
+      max-width: 105px;
+    }
+
     .checkOutContainer {
       flex-direction: column;
       justify-content: center;
@@ -102,9 +112,12 @@ input[type='checkbox'] {
       width: 150px;
     }
 
-   
-
     .regions {
       width: 340px;
+    }
+
+    .dropdownIcon {
+      right: -40px;
+      top: 10px;
     }
   }
