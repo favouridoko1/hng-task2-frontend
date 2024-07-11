@@ -142,7 +142,7 @@ const Cart = () => {
             </figure>
           </div>
         </div>
-        <div className="mr-52 deliverInfoContainer">
+        <div className="mr-52 mb-6 deliverInfoContainer">
           <div className="flex justify-between">
             <h2 className="text-green text-sm font-medium text-nowrap">
               Delivery
