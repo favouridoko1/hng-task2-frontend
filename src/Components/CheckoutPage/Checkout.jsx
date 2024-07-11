@@ -1,6 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import { getImageUrl } from "../../utils/utils";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ const Checkout = () => {
         
         <div className="my-2  text-white">
           <button
-            onClick={() => navigate("/checkout")}
+            onClick={() => navigate('/Completed')}
             className="bg-fontColor px-32 py-3 text-nowrap rounded-3xl borders mb-2 checkoutBtn"
           >
             Place Order
