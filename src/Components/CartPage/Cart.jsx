@@ -18,7 +18,7 @@ const Cart = () => {
                 className="font-light mr-2 text-grey cursor-pointer"
               />
             </figure>
-            <h2 className="text-xl text-topSellin text-nowrap">
+            <h2 className="text-xl text-topSelling text-nowrap">
               Your Cart
               <span className="ml-80 text-base text-fontColor">(3)</span>
             </h2>

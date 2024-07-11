@@ -6,10 +6,26 @@ import "./checkout.css";
 const Checkout = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <>
       <Navbar />
-      <div></div>
-
+  
+    <div className="flex justify-evenly">
+    <ul className="m-6 yourCartContainer">
+          <li className="flex items-center bdBottom">
+            <figure>
+              <img
+                onClick={() => navigate("/")}
+                src={getImageUrl("headerImages/arrow-left.png")}
+                alt=""
+                className="font-light mr-2 text-grey cursor-pointer"
+              />
+            </figure>
+            <h2 className="text-xl text-topSelling text-nowrap">
+              Shipping
+              <span className="ml-80 text-base text-fontColor">(3)</span>
+            </h2>
+          </li>
+          </ul>
       <div className="borders rounded-xl my-4 checkoutButtonContainer p-4">
         <ul className="text-sm font-semibold text-black flex justify-between">
           <li className="text-fontColor font-light my-3">
@@ -121,6 +137,7 @@ const Checkout = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
