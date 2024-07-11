@@ -1,6 +1,7 @@
 import Navbar from "../Navbar/Navbar";
 import { getImageUrl } from "../../utils/utils";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "./checkout.css";
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -53,16 +54,45 @@ const Checkout = () => {
           />
         </figure>
         <div className="font-medium text-fontColor">
-          <p>I confirm that my address is 100% correct and WILL NOT hold Top Shelf BC liable if this shipment is sent to an incorrect adress.</p>
+          <p>
+            <span>
+              <input type="checkbox" className="mr-2" />
+            </span>
+            I confirm that my address is 100% correct and WILL NOT hold Top
+            Shelf BC liable if this shipment is sent to an incorrect adress.
+          </p>
           <br />
           <p>
+            <span>
+              <input type="checkbox" className="mr-2" />
+            </span>
             Sign me up to receive email updates and news (Optional)
           </p>
+          <hr />
+          <div className="flex mt-2 items-center justify-between">
+            <figure className="flex gap-2 items-center">
+              <span>
+                <img
+                  src={getImageUrl("headerImages/dollar-circle.png")}
+                  alt=""
+                  className="bg-ye
+               borders"
+                />
+              </span>
+              <figcaption>
+                Your point <span className="text-black">10.00</span>
+              </figcaption>
+            </figure>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+            </label>
+          </div>
         </div>
-        
+
         <div className="my-2  text-white">
           <button
-            onClick={() => navigate('/Completed')}
+            onClick={() => navigate("/Completed")}
             className="bg-fontColor px-32 py-3 text-nowrap rounded-3xl borders mb-2 checkoutBtn"
           >
             Place Order
