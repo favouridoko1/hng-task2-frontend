@@ -1,3 +1,5 @@
+
+
 input[type='checkbox'] {
     accent-color: #17AF26;
     /* color: #fff; */
@@ -65,3 +67,44 @@ input[type='checkbox'] {
     border-radius: 50%;
   }
   
+  ::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: red;
+  }
+  
+  .regions {
+    width: 440px;
+  }
+
+  @media screen and (max-width: 862px) {
+    .checkOutContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      max-width: 400px;
+    }
+    .yourCartContainer {
+      flex-shrink: inherit;
+      margin-right: 50px;
+    }
+    #fname {
+      width: 150px;
+    }
+
+    #lname {
+      width: 150px;
+    }
+
+   
+
+    .regions {
+      width: 340px;
+    }
+  }
