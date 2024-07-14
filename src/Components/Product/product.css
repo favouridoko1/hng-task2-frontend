@@ -1,179 +1,7 @@
-/* /* brand-icons {
+brand-icons {
     border-bottom: 1px solid #F4F4F4;
-} */
-
-.shoppingParent {
-    border-left: 1px solid #F2F6F4;
-    padding: 0;
-    max-width: 98%;
-   font-size: 12px;
-   display: flex; 
 }
 
-.itemsContainer {
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-}
-
-.borderBottom {
-    border-bottom: 1px solid #F2F6F4;
-
-}
-
-
-/* @media screen and (max-width: 802px) {
-    /* .youAreSafeParagraph {
-        text-wrap: wrap;
-    } */
-
-    /* .itemsContainer { */
-        /* display: grid; */
-        /* grid-template-columns: 1fr 1fr; */
-        /* grid-template-columns: repeat(2, 1fr); */
-    /* } */ 
-
-
-@media screen and (max-width: 802px)  {
-    
-    .filterContainer {
-        display: none;
-        padding: 0px;
-    }
-}
-
-/* .shoppingParent {
-         padding: 0;
-        margin: 0;
-        font-size: 12px;
-        display: flex; 
-    } */
-
-/* 
-    .filterborder {}
-
-    .leading-normal {
-        max-width: 90%;
-        margin-top: 10px;
-    } */
-
-    /* .top { */
-        /* font-size: 10px; */
-    /* } */
-/*  
-    
-
-    .Tyrelayout { */
-        /* /padding: 0px; */
-        /* 
-        padding-right: 0px;
-        margin-left: 6%;
-        align-items: start;
-        justify-content: center; */
-    /* } */
-
-    /* .tyre { */
-    /* width: 120px; */
-    /* } */
-
-    /* .borderBottom { */
-    /* padding: 0px;
-        margin: 0px;
-        max-width: 350px; */
-    /* } */
-    /* .cards { */
-    /* height: 500px; */
-    /* } */
-
-
-    /* .verticleLine { */
-    /* border-left: 1px solid #c4c4c4;
-        padding-left: 10px; */
-    /* } */
-
-    /* .header { */
-    /* display: flex;
-        position: relative;
-        padding: 30px 15px;
-        width: 100%; */
-    /* padding-bottom: 50px; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-
-    /* justify-content: space-between; */
-
-    /* } */
-
-    /* .assuranceContainer { */
-    /* justify-content: space-between;
-        padding: 2px; */
-/* } */
-
-/* .securityAssurance { */
-/* flex-direction: column;
-        padding: 0;
-        margin: 0; */
-/* } */
-
-
-/* .inputContainer { */
-/* order: 1; */
-/* margin-left: 40%; */
-/* max-width: 400px; */
-/* height: 48px; */
-/* position: absolute; */
-/*left: 47%;
-        top: 60%; */
-/* } */
-/* .input { */
-/* width: 100%;
-        height: 100%; */
-
-/* } */
-
-/* .sectionContainer { */
-/* padding: 0px;
-        display: flex; */
-/* margin: 0px; */
-/* justify-content: start;
-        align-items: start; */
-/* display: grid; */
-/* flex-direction: row-reverse; */
-/* }/ */
-/* .imgagePart { */
-/* padding: 0;
-        margin: 0; */
-/* } */
-
-/* .imagesAndInfo { */
-/* display: grid; */
-/* grid-template-columns: minmax(200px); */
-/* grid-template-columns: repeat(200px, minmax(0, 1fr)); */
-/* grid-template-columns:  repeat(3, 150px); */
-/* } */
-
-/* .images { */
-/* margin: 0;
-        padding: 0; */
-/* display: grid;
-        grid-template-columns: 1fr 1fr; */
-/* } */
-/* } */
-
-
-/* @media screen and (min-width: 802px) {
-    .itemsContainer {
-        display: grid;
-        /* grid-template-columns: 1fr 1fr; */
-/* grid-template-columns: repeat(3, 1fr);
-}
-} */
-
-
-/*
 .input {
     border: 1px solid #F4F4F4;
     max-width: 400px;
@@ -249,4 +77,111 @@
     border: 1px solid #000;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
     border-radius: 100px;
-/* } */ 
+}
+
+
+
+@media screen and (max-width: 802px) {
+    .top {
+        font-size: 10px;
+    }
+    .shoppingParent {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .Tyrelayout {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 6%;
+        align-items: start;
+        justify-content: center;
+    }
+    .tyre {
+        width: 120px;
+    }
+
+    .borderBottom {
+        padding: 0px;
+        margin: 0px;
+        max-width: 350px;
+    }
+    .cards {
+        height: 500px;
+    }
+    
+
+    .verticleLine {
+        border-left: 1px solid #c4c4c4;
+        padding-left: 10px;
+    }
+   
+    .header {
+        display: flex;
+        position: relative;
+        padding: 30px 15px;
+        width: 100%;
+        /* padding-bottom: 50px; */
+        /* flex-wrap: wrap; */
+        /* flex-direction: row; */
+        
+        /* justify-content: space-between; */ 
+
+    }
+
+    .assuranceContainer {
+        justify-content: space-between;
+        padding: 2px;
+    }
+
+    .securityAssurance {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .youAreSafeParagraph {
+        text-wrap: wrap;
+    }
+    
+    
+
+    .filterContainer {
+        display: none;
+        padding: 0px;
+    }
+
+    .filterborder {
+
+    }
+    .inputContainer {
+        order: 1;
+        /* margin-left: 40%; */
+        /* max-width: 400px; */
+        /* height: 48px; */
+         /* position: absolute; */
+        /*left: 47%;
+        top: 60%; */
+    }
+    .input {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .sectionContainer {
+        padding: 0px;
+        display: flex;
+        /* margin: 0px; */
+        justify-content: start;
+        align-items: start;
+        /* display: grid; */
+        /* flex-direction: row-reverse; */
+    }
+    .imgagePart {
+        padding: 0;
+        margin: 0;
+    }
+}

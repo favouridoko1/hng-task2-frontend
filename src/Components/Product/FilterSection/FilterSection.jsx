@@ -94,7 +94,7 @@ const FilterSection = () => {
             </ul>
             <hr className="filterByBorder mt-2 mb-3"></hr>
           </div>
-          <button className="bg-green rounded-3xl px-3 text-white font-medium h-8 my-1 ">Apply</button>
+          <button className="bg-green rounded-2xl px-3 text-white font-medium h-8 my-1 ">Apply</button>
           <h3 className="text-xs font-light text-filterFont my-2">ORDER BY</h3>
           <ul className="text-sm font-normal text-black mb-2">
             <li className="m-1"><input type="radio" /> <span>Default</span></li>
