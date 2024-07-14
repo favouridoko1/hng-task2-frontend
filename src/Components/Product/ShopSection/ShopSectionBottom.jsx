@@ -1,11 +1,11 @@
-import { getImageUrl } from "../../../utils/utils";
+// import { getImageUrl } from "../../../utils/utils";
 import { useNavigate } from 'react-router-dom';
 
 const ShopSectionBottom = () => {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   return (
     <>
-      <div className="flex bg-white py-3 justify-between items-center images Container">
+      {/* <div className="flex bg-white py-3 justify-between items-center images ">
         <div className="flex flex-col justify-center cards">
           <div className="flex justify-center">
             <img
@@ -15,7 +15,7 @@ const ShopSectionBottom = () => {
             />
           </div>
           <div className=" flex flex-col text-base items-center justify-center my-3 py-4 px-">
-            <p className="text-fontColor text-sm">Michelin</p>
+            <p className="text-fontColor text-sm">{}</p>
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-base">Michelin Premier LTX</h2>
               <h4 className="font-bold text-headerTop text-sm m-1 p-2  bg-grey">
@@ -388,7 +388,7 @@ const ShopSectionBottom = () => {
           </div>
         </div>
         
-      </div>
+      </div> */}
       
     </>
   );
