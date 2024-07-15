@@ -1,6 +1,9 @@
 {
     "rewrite" : [
         {
+            "buildCommand": "next build"
+          },
+        {
             "source": "/api/(.*)",
             "destination": "https://api/timbu.cloud/$1"
         },
