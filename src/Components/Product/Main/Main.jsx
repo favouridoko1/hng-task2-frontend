@@ -29,7 +29,7 @@ const Main = () => {
         <p>Best Quality & Pricing</p>
       </div>
     </div>
-      <div className="flex sectionContainer">
+      <div className="sectionContainer">
             <FilterSection />
             <ShopSection />
       </div>
